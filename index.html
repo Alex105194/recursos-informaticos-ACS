@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Control HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control HTML</title>
+</head>
+<body>
+     <h1>Registro alumnos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Asignatura</th>
+                <th>Horas semanales</th>
+                <th>Profesor</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>231</td>
+                <td>Programación</td>
+                <td>8</td>
+                <td>Pascual</td>
+            </tr>
+
+            <tr>
+                <td>248</td>
+                <td>Bases de datos</td>
+                <td>6</td>
+                <td>Gloria</td>
+            </tr>
+
+            <tr>
+                <td>259</td>
+                <td>Entornos de desarrollo</td>
+                <td>4</td>
+                <td>Raúl</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Horas semanales totales</td>
+                <td colspan="2">18 h</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Formulario de registro</h2>
+
+    <form>
+        <label for="name">Nombre completo:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo"
+               placeholder="nombre@alu.edu.gva.es"><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena"><br>
+
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso">
+            <option>1-DAM</option>
+            <option>2-DAM</option>
+            <option>1-DAW</option>
+            <option>2-DAW</option>
+            <option>1-ASIR</option>
+            <option>2-ASIR</option>
+        </select><br>
+
+        <p>Turno:</p>
+
+        <input type="radio" id="turnom" name="turno" value="manana">
+        <label for="turnom">Mañana</label><br>
+
+        <input type="radio" id="turnot" name="turno" value="tarde">
+        <label for="turnot">Tarde</label><br>
+
+        <label for="observacion">Observación:</label>
+        <textarea id="observacion" name="observacion"></textarea><br>
+
+        <input type="reset" value="Reinciar">
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
