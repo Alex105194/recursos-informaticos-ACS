@@ -1,2 +1,3 @@
 # recursos-informaticos-ACS
-Este es mi segundo repositorio.
+Esto es un proyecto enfocado a html y css.
+En este caso estoy creando un formulario para registrar alumnos.
