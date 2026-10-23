@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #1e6091;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e6091;
+    color: white;
+}
+
+/* Filas alternas */
+tbody tr:nth-child(even) {
+    background-color: #eaf2f8;
+}
+
+/* Efecto al pasar el ratón */
+tbody tr:hover {
+    background-color: #d4e6f1;
+}
+
+/* Pie de la tabla */
+tfoot {
+    font-weight: bold;
+    background-color: #d6eaf8;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas */
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Campos de texto */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+/* Efecto al seleccionar los campos */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1e6091;
+    box-shadow: 0 0 5px rgba(30, 96, 145, 0.3);
+}
+
+/* Área de observaciones */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Opciones de turno */
+input[type="radio"] {
+    margin-right: 6px;
+    margin-bottom: 18px;
+}
+
+form p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Botones */
+input[type="reset"],
+input[type="submit"] {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Botón Reiniciar */
+input[type="reset"] {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #626f70;
+}
+
+/* Botón Enviar */
+input[type="submit"] {
+    background-color: #1e6091;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #154360;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    form {
+        padding: 18px;
+    }
+}
